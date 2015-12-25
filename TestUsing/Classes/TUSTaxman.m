@@ -10,8 +10,10 @@
 
 @implementation TUSTaxman
 
+
 - (void)receiveTaxes:(NSDecimalNumber *)taxes sender:(id)sender {
-    //...
+    NSMutableDictionary *tmp = [self.records mutableCopy];
+    self.records = [tmp copy];
 }
 
 @end
